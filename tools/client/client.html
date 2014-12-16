@@ -1,0 +1,52 @@
+<head>
+  <title>Aeon Arena Tools</title>
+</head>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<body>
+<a href="https://github.com/steve/simple-d3-with-meteor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+	
+	{{> vis}}
+
+	{{> actionTrackers}}
+	
+	{{> vthings}}
+
+	{{> hello}}
+</body>
+
+<template name="vis">
+	<hr/>
+  <div id="circles"></div>
+</template>
+
+<template name="actionTrackers">
+	<hr/>
+	<div id="actionTrackers"></div>
+
+	<div class="chart">
+
+	</div>
+</template>
+
+<template name="vthings">
+	<input type="button" class="increment" value="+">
+	<input type="button" class="decrement" value="-">
+
+	<div>
+		<svg id="vthings" width="500" height="500">
+			{{#each vthings}}
+				{{> vthing}}
+			{{/each}}
+		</svg>
+	</div>
+</template>
+
+<template name="vthing">
+	{{circle}}
+</template>
+
