@@ -1,0 +1,13 @@
+{
+  "terrainTypes": {
+    "grass": {
+      movementCost: 1,
+      allowedUnitTypes: ["any"],
+      sprites: {
+        "base": [0-1]
+      }
+    },
+
+  },
+  ""
+}

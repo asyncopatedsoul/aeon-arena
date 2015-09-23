@@ -8,4 +8,8 @@ autopublish
 insecure
 d3
 jquery
+iron:router
+urigo:angular
+aldeed:collection2
+underscore
 

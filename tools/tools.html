@@ -2,3 +2,21 @@
   <title>tools</title>
 </head>
 
+<template name="addUnitForm">
+  <input type="text" name="name"/>
+  <input type="text" name="actionValue"/>
+</template>
+
+<template name="UnitSummary">
+  {{name}}
+  {{currentHealth}}/{{maxHealth}}
+  {{baseActionValue}}
+  {{#each actions}}
+    {{> ActionSummary}}
+  {{/each}}
+</template>
+
+
+<template name="ActionSummary">
+  {{name}}
+</template>

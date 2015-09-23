@@ -20,7 +20,6 @@ Session.set("data",[
 // {name: "fighter", value:25}, 
 // {name: "fighter", value:72} ]);
 
-
 Template.actionTrackers.rendered = function(){
 
 	console.log("actionTrackers.rendered");
